@@ -51,7 +51,7 @@ for key, files in files_by_name.items():
             if os.path.exists(dst):
                 os.remove(dst) 
             
-            shutil.move(src, dst)
+            shutil.copy2(src, dst)
             print(f"Файл {file_name} перемещен из {os.path.dirname(src)}")
 
 
